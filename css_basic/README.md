@@ -13,4 +13,3 @@ This project is part of the ALX Frontend curriculum. It explores basic CSS styli
 
 - No external libraries used.
 - Fully responsive and W3C-compliant.
-- Made by a CSS beginner 😄
