@@ -1,0 +1,41 @@
+/* Flexbox layout setup */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+article {
+  flex: 2;
+  overflow-y: auto;
+  background-color: #fffbe6;
+  padding: 15px;
+}
+
+aside {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+
+/* Extra newbie-style styling */
+
+header {
+  background-color: #e0e0e0;
+}
+
+footer {
+  background-color: #ddd;
+  text-align: center;
+}
+
+.logo {
+  color: #0073e6;
+}
