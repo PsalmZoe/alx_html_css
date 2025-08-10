@@ -1,0 +1,126 @@
+/* ============================= */
+/* RESET AND VARIABLES */
+/* ============================= */
+:root {
+    --primary-color: #FF6565;
+    --text-color: #fff;
+    --max-width: 1000px;
+    --font-family: 'Source Sans Pro', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* ============================= */
+/* CONTAINERS */
+/* ============================= */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================= */
+/* HEADER BACKGROUND */
+/* ============================= */
+.header {
+    background: url('images/hero-background.jpg') no-repeat center/cover;
+    padding: 20px 0 60px;
+}
+
+/* ============================= */
+/* NAVIGATION */
+/* ============================= */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+    color: var(--primary-color);
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+.hero {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover,
+.btn:active {
+    opacity: 0.9;
+}
+
+.hero-description {
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
