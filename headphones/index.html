@@ -3,34 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Headphones</title>
+    <title>Portfolio - Multi-section in One Page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <header class="header">
-        <nav class="nav container">
-            <img src="images/logo.png" alt="Headphones Logo" class="logo">
+    <!-- Home Section -->
+    <section id="home" class="page-section">
+        <h1>Welcome to My Portfolio</h1>
+        <img src="images/home.jpg" alt="Creative workspace">
+        <p>Hi, I’m David Oche Agbidi — Graphic Designer, Web Developer, and Product Designer. I create beautiful and functional designs that bring ideas to life.</p>
+    </section>
 
-            <ul class="nav-links">
-                <li><a href="#what-we-do">what we do</a></li>
-                <li><a href="#our-results">our results</a></li>
-                <li><a href="#contact-us">contact us</a></li>
-            </ul>
-        </nav>
+    <!-- About Section -->
+    <section id="about" class="page-section">
+        <h2>About Me</h2>
+        <img src="images/about.jpg" alt="Portrait of David Oche Agbidi">
+        <p>I blend creativity and logic to design user-centered digital solutions. With a background in full-stack development and visual design, I bring ideas to life from concept to code.</p>
+    </section>
 
-        <section class="hero container">
-            <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
-            <p class="subtitle">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
-            <a href="#" class="btn">CALL TO ACTION</a>
-            <p class="hero-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </section>
-    </header>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="page-section">
+        <h2>My Work</h2>
+        <div class="gallery">
+            <img src="images/work1.jpg" alt="Project 1">
+            <img src="images/work2.jpg" alt="Project 2">
+            <img src="images/work3.jpg" alt="Project 3">
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="page-section">
+        <h2>Contact Me</h2>
+        <img src="images/contact.jpg" alt="Contact illustration">
+        <p>Email: <a href="mailto:david@example.com">david@example.com</a></p>
+        <p>Phone: +234 800 000 0000</p>
+    </section>
 </body>
 </html>
